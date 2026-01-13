@@ -1,0 +1,382 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Leadership Insights & Industry Trends - Endeavor Agency"
+  description="Stay informed with the latest executive search insights, leadership trends, and industry analysis from Endeavor Agency's team of experts."
+>
+  <Header />
+  
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="section-padding bg-gradient-to-br from-primary-500 to-primary-700 text-white">
+      <div class="container-custom text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
+          Leadership <span class="text-accent-400">Insights</span>
+        </h1>
+        <p class="text-xl opacity-90 max-w-3xl mx-auto animate-fade-in" style="animation-delay: 0.2s;">
+          Stay ahead of the curve with our latest insights on executive search trends, leadership best practices, and market intelligence from our team of experts.
+        </p>
+      </div>
+    </section>
+    
+    <!-- Featured Insights -->
+    <section class="section-padding">
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Featured <span class="text-gradient">Insights</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Our most popular and impactful insights on leadership and executive search.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+          <!-- Featured Article 1 -->
+          <article class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+            <img 
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+              alt="Future of leadership" 
+              class="w-full h-64 object-cover"
+              loading="lazy"
+            />
+            <div class="p-8">
+              <div class="flex items-center mb-4">
+                <span class="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">Leadership Trends</span>
+                <span class="text-gray-500 text-sm ml-4">December 2024</span>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                The Future of Executive Leadership: 5 Key Trends for 2025
+              </h3>
+              <p class="text-gray-600 mb-6">
+                As we look ahead to 2025, executive leadership is evolving rapidly. From AI integration to remote-first cultures, discover the key trends shaping the future of C-suite roles and what it means for your organization.
+              </p>
+              <a href="#" class="text-primary-500 font-semibold hover:text-primary-700 transition-colors">
+                Read More →
+              </a>
+            </div>
+          </article>
+          
+          <!-- Featured Article 2 -->
+          <article class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+            <img 
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+              alt="Board diversity" 
+              class="w-full h-64 object-cover"
+              loading="lazy"
+            />
+            <div class="p-8">
+              <div class="flex items-center mb-4">
+                <span class="bg-accent-100 text-accent-700 px-3 py-1 rounded-full text-sm font-medium">Board Governance</span>
+                <span class="text-gray-500 text-sm ml-4">November 2024</span>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                Building Diverse Boards: A Strategic Imperative for Modern Companies
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Board diversity isn't just about compliance—it's about performance. Learn how diverse boards drive better decision-making, risk management, and long-term value creation for stakeholders.
+              </p>
+              <a href="#" class="text-primary-500 font-semibold hover:text-primary-700 transition-colors">
+                Read More →
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Insights Categories -->
+    <section class="section-padding bg-gray-50">
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Explore by <span class="text-gradient">Category</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Find insights tailored to your specific interests and industry focus.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Executive Search -->
+          <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+            <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Executive Search</h3>
+            <p class="text-gray-600 mb-6">
+              Best practices, methodologies, and trends in executive search and talent acquisition.
+            </p>
+            <div class="space-y-3">
+              <a href="#" class="block text-primary-500 hover:text-primary-700 transition-colors">
+                • The Art of Executive Assessment
+              </a>
+              <a href="#" class="block text-primary-500 hover:text-primary-700 transition-colors">
+                • Passive Candidate Engagement Strategies
+              </a>
+              <a href="#" class="block text-primary-500 hover:text-primary-700 transition-colors">
+                • Cultural Fit vs. Skills: Finding Balance
+              </a>
+            </div>
+          </div>
+          
+          <!-- Market Intelligence -->
+          <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+            <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Market Intelligence</h3>
+            <p class="text-gray-600 mb-6">
+              Compensation trends, market analysis, and competitive intelligence across industries.
+            </p>
+            <div class="space-y-3">
+              <a href="#" class="block text-primary-500 hover:text-primary-700 transition-colors">
+                • 2024 Executive Compensation Report
+              </a>
+              <a href="#" class="block text-primary-500 hover:text-primary-700 transition-colors">
+                • Tech Talent Market Analysis
+              </a>
+              <a href="#" class="block text-primary-500 hover:text-primary-700 transition-colors">
+                • Healthcare Leadership Trends
+              </a>
+            </div>
+          </div>
+          
+          <!-- Leadership Development -->
+          <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+            <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Leadership Development</h3>
+            <p class="text-gray-600 mb-6">
+              Insights on developing, assessing, and retaining top leadership talent.
+            </p>
+            <div class="space-y-3">
+              <a href="#" class="block text-primary-500 hover:text-primary-700 transition-colors">
+                • Building High-Performance Teams
+              </a>
+              <a href="#" class="block text-primary-500 hover:text-primary-700 transition-colors">
+                • Succession Planning Best Practices
+              </a>
+              <a href="#" class="block text-primary-500 hover:text-primary-700 transition-colors">
+                • Leadership in Crisis Management
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Recent Insights -->
+    <section class="section-padding">
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Recent <span class="text-gradient">Insights</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Our latest thinking on executive search, leadership, and market trends.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Insight 1 -->
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+            <img 
+              src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+              alt="Remote leadership" 
+              class="w-full h-48 object-cover"
+              loading="lazy"
+            />
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <span class="bg-primary-100 text-primary-700 px-2 py-1 rounded text-xs font-medium">Remote Work</span>
+                <span class="text-gray-500 text-xs ml-3">Dec 15, 2024</span>
+              </div>
+              <h3 class="text-lg font-bold text-gray-800 mb-3">
+                Leading Remote Teams: New Skills for Modern Executives
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                The shift to remote and hybrid work has fundamentally changed what it means to be an effective leader...
+              </p>
+              <a href="#" class="text-primary-500 font-semibold text-sm hover:text-primary-700 transition-colors">
+                Read More →
+              </a>
+            </div>
+          </article>
+          
+          <!-- Insight 2 -->
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+            <img 
+              src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+              alt="ESG leadership" 
+              class="w-full h-48 object-cover"
+              loading="lazy"
+            />
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <span class="bg-accent-100 text-accent-700 px-2 py-1 rounded text-xs font-medium">ESG</span>
+                <span class="text-gray-500 text-xs ml-3">Dec 12, 2024</span>
+              </div>
+              <h3 class="text-lg font-bold text-gray-800 mb-3">
+                ESG Leadership: The New Executive Imperative
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Environmental, social, and governance considerations are now central to executive decision-making...
+              </p>
+              <a href="#" class="text-primary-500 font-semibold text-sm hover:text-primary-700 transition-colors">
+                Read More →
+              </a>
+            </div>
+          </article>
+          
+          <!-- Insight 3 -->
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+            <img 
+              src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+              alt="AI in recruitment" 
+              class="w-full h-48 object-cover"
+              loading="lazy"
+            />
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <span class="bg-primary-100 text-primary-700 px-2 py-1 rounded text-xs font-medium">Technology</span>
+                <span class="text-gray-500 text-xs ml-3">Dec 10, 2024</span>
+              </div>
+              <h3 class="text-lg font-bold text-gray-800 mb-3">
+                AI in Executive Search: Enhancing Human Judgment
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                How artificial intelligence is transforming executive search while preserving the human element...
+              </p>
+              <a href="#" class="text-primary-500 font-semibold text-sm hover:text-primary-700 transition-colors">
+                Read More →
+              </a>
+            </div>
+          </article>
+          
+          <!-- Insight 4 -->
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+            <img 
+              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+              alt="Startup leadership" 
+              class="w-full h-48 object-cover"
+              loading="lazy"
+            />
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <span class="bg-accent-100 text-accent-700 px-2 py-1 rounded text-xs font-medium">Startups</span>
+                <span class="text-gray-500 text-xs ml-3">Dec 8, 2024</span>
+              </div>
+              <h3 class="text-lg font-bold text-gray-800 mb-3">
+                Scaling Leadership: From Startup to Enterprise
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                The leadership skills that drive startup success don't always translate to enterprise scale...
+              </p>
+              <a href="#" class="text-primary-500 font-semibold text-sm hover:text-primary-700 transition-colors">
+                Read More →
+              </a>
+            </div>
+          </article>
+          
+          <!-- Insight 5 -->
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+            <img 
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+              alt="Diversity in leadership" 
+              class="w-full h-48 object-cover"
+              loading="lazy"
+            />
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <span class="bg-primary-100 text-primary-700 px-2 py-1 rounded text-xs font-medium">Diversity</span>
+                <span class="text-gray-500 text-xs ml-3">Dec 5, 2024</span>
+              </div>
+              <h3 class="text-lg font-bold text-gray-800 mb-3">
+                The Business Case for Diverse Leadership Teams
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Research continues to show that diverse leadership teams outperform homogeneous ones...
+              </p>
+              <a href="#" class="text-primary-500 font-semibold text-sm hover:text-primary-700 transition-colors">
+                Read More →
+              </a>
+            </div>
+          </article>
+          
+          <!-- Insight 6 -->
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+            <img 
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+              alt="Executive onboarding" 
+              class="w-full h-48 object-cover"
+              loading="lazy"
+            />
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <span class="bg-accent-100 text-accent-700 px-2 py-1 rounded text-xs font-medium">Onboarding</span>
+                <span class="text-gray-500 text-xs ml-3">Dec 3, 2024</span>
+              </div>
+              <h3 class="text-lg font-bold text-gray-800 mb-3">
+                Executive Onboarding: The First 100 Days
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                A structured approach to executive onboarding can make the difference between success and failure...
+              </p>
+              <a href="#" class="text-primary-500 font-semibold text-sm hover:text-primary-700 transition-colors">
+                Read More →
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Newsletter Signup -->
+    <section class="section-padding bg-gradient-to-br from-primary-500 to-primary-700 text-white">
+      <div class="container-custom">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            Stay Informed with Our Newsletter
+          </h2>
+          <p class="text-xl opacity-90 mb-8">
+            Get the latest insights on executive search, leadership trends, and market intelligence delivered to your inbox monthly.
+          </p>
+          
+          <form class="max-w-md mx-auto">
+            <div class="flex flex-col sm:flex-row gap-4">
+              <input 
+                type="email" 
+                placeholder="Enter your email address" 
+                class="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:ring-2 focus:ring-accent-400 focus:outline-none"
+                required
+              />
+              <button 
+                type="submit" 
+                class="bg-accent-400 text-gray-800 px-6 py-3 rounded-lg font-semibold hover:bg-accent-500 transition-all duration-300 hover:scale-105"
+              >
+                Subscribe
+              </button>
+            </div>
+            <p class="text-sm opacity-75 mt-4">
+              We respect your privacy. Unsubscribe at any time.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>

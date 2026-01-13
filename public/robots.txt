@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://endeavorexecutive.com/sitemap.xml

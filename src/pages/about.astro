@@ -1,0 +1,303 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="About Endeavor Agency - Executive Search Experts"
+  description="Learn about Endeavor Agency's mission, values, and team. Over 20 years of executive search excellence connecting exceptional leaders with innovative organizations."
+>
+  <Header />
+  
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="section-padding bg-gradient-to-br from-primary-500 to-primary-700 text-white">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
+              About <span class="text-accent-400">Endeavor Agency</span>
+            </h1>
+            <p class="text-xl opacity-90 mb-8 animate-fade-in" style="animation-delay: 0.2s;">
+              For over two decades, we've been connecting exceptional leaders with forward-thinking organizations, creating partnerships that drive transformational growth and lasting success.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 animate-fade-in" style="animation-delay: 0.4s;">
+              <a href="/contact" class="bg-white text-primary-700 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 inline-block text-center">
+                Work With Us
+              </a>
+              <a href="/process" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-700 transition-all duration-300 inline-block text-center">
+                Our Process
+              </a>
+            </div>
+          </div>
+          <div class="relative animate-fade-in" style="animation-delay: 0.6s;">
+            <img 
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+              alt="Professional team collaboration" 
+              class="rounded-2xl shadow-2xl"
+              loading="eager"
+            />
+            <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-accent-400 rounded-full opacity-20"></div>
+            <div class="absolute -top-6 -right-6 w-16 h-16 bg-white rounded-full opacity-20"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Mission & Vision -->
+    <section class="section-padding">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div class="text-center">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Mission</h2>
+            <p class="text-lg text-gray-600">
+              To empower organizations by connecting them with exceptional leaders who drive innovation, growth, and positive change. We believe that the right leadership can transform companies and create lasting impact.
+            </p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+              </svg>
+            </div>
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Vision</h2>
+            <p class="text-lg text-gray-600">
+              To be the most trusted executive search partner, known for our integrity, expertise, and commitment to creating meaningful connections between exceptional talent and visionary organizations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Our Story -->
+    <section class="section-padding bg-gray-50">
+      <div class="container-custom">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
+            Our <span class="text-gradient">Story</span>
+          </h2>
+          <div class="text-lg text-gray-600 space-y-6">
+            <p>
+              Founded in 2003, Endeavor Agency emerged from a simple yet powerful belief: that exceptional leadership is the cornerstone of organizational success. Our founders, seasoned executives themselves, recognized the critical gap between talented leaders and the organizations that needed them most.
+            </p>
+            <p>
+              Over the past two decades, we've evolved from a boutique search firm to a comprehensive talent solutions partner, serving clients across diverse industries and company stages. From high-growth startups to Fortune 500 enterprises, we've helped organizations build leadership teams that drive sustainable growth and innovation.
+            </p>
+            <p>
+              Today, Endeavor Agency stands as a trusted partner to over 150 client companies, having successfully placed more than 500 executives in roles that have transformed businesses and careers alike. Our success is measured not just in placements made, but in the lasting impact our candidates create within their organizations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Our Values -->
+    <section class="section-padding">
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Our <span class="text-gradient">Values</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            These core values guide everything we do and shape how we serve our clients and candidates.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="text-center card-hover bg-white rounded-xl p-8 shadow-lg">
+            <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Integrity</h3>
+            <p class="text-gray-600">
+              We operate with the highest ethical standards, maintaining confidentiality and transparency in all our interactions.
+            </p>
+          </div>
+          
+          <div class="text-center card-hover bg-white rounded-xl p-8 shadow-lg">
+            <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Excellence</h3>
+            <p class="text-gray-600">
+              We strive for excellence in every search, delivering results that exceed expectations and create lasting value.
+            </p>
+          </div>
+          
+          <div class="text-center card-hover bg-white rounded-xl p-8 shadow-lg">
+            <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Partnership</h3>
+            <p class="text-gray-600">
+              We build long-term partnerships with our clients, serving as trusted advisors throughout their growth journey.
+            </p>
+          </div>
+          
+          <div class="text-center card-hover bg-white rounded-xl p-8 shadow-lg">
+            <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Innovation</h3>
+            <p class="text-gray-600">
+              We continuously evolve our methods and leverage technology to deliver more effective and efficient search solutions.
+            </p>
+          </div>
+          
+          <div class="text-center card-hover bg-white rounded-xl p-8 shadow-lg">
+            <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Diversity</h3>
+            <p class="text-gray-600">
+              We champion diversity and inclusion, helping organizations build leadership teams that reflect the communities they serve.
+            </p>
+          </div>
+          
+          <div class="text-center card-hover bg-white rounded-xl p-8 shadow-lg">
+            <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Results</h3>
+            <p class="text-gray-600">
+              We are committed to delivering measurable results that drive organizational success and candidate satisfaction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Leadership Team -->
+    <section class="section-padding bg-gray-50">
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Our <span class="text-gradient">Leadership Team</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Meet the experienced professionals who lead Endeavor Agency and drive our mission forward.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl p-8 shadow-lg card-hover text-center">
+            <img 
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+              alt="CEO" 
+              class="w-24 h-24 rounded-full mx-auto mb-6 object-cover"
+              loading="lazy"
+            />
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Michael Harrison</h3>
+            <p class="text-primary-500 font-semibold mb-4">Chief Executive Officer</p>
+            <p class="text-gray-600 text-sm">
+              With over 25 years in executive search, Michael founded Endeavor Agency with a vision to transform how organizations find and develop leadership talent.
+            </p>
+          </div>
+          
+          <div class="bg-white rounded-xl p-8 shadow-lg card-hover text-center">
+            <img 
+              src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+              alt="Managing Partner" 
+              class="w-24 h-24 rounded-full mx-auto mb-6 object-cover"
+              loading="lazy"
+            />
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Sarah Chen</h3>
+            <p class="text-primary-500 font-semibold mb-4">Managing Partner</p>
+            <p class="text-gray-600 text-sm">
+              Sarah leads our technology and healthcare practices, bringing deep industry expertise and a track record of successful C-suite placements.
+            </p>
+          </div>
+          
+          <div class="bg-white rounded-xl p-8 shadow-lg card-hover text-center">
+            <img 
+              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+              alt="Senior Partner" 
+              class="w-24 h-24 rounded-full mx-auto mb-6 object-cover"
+              loading="lazy"
+            />
+            <h3 class="text-xl font-bold text-gray-800 mb-2">David Rodriguez</h3>
+            <p class="text-primary-500 font-semibold mb-4">Senior Partner</p>
+            <p class="text-gray-600 text-sm">
+              David specializes in financial services and private equity searches, with extensive experience in board recruitment and succession planning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="section-padding">
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Our <span class="text-gradient">Impact</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Numbers that reflect our commitment to excellence and the trust our clients place in us.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="text-4xl md:text-5xl font-bold text-primary-500 mb-2">500+</div>
+            <div class="text-gray-600 font-medium">Executive Placements</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl md:text-5xl font-bold text-primary-500 mb-2">95%</div>
+            <div class="text-gray-600 font-medium">Success Rate</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl md:text-5xl font-bold text-primary-500 mb-2">20+</div>
+            <div class="text-gray-600 font-medium">Years Experience</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl md:text-5xl font-bold text-primary-500 mb-2">150+</div>
+            <div class="text-gray-600 font-medium">Client Companies</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="section-padding bg-gradient-to-br from-primary-500 to-primary-700 text-white">
+      <div class="container-custom text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Ready to Partner With Us?
+        </h2>
+        <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
+          Whether you're looking to build your leadership team or advance your executive career, we're here to help you achieve your goals.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" class="bg-white text-primary-700 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 inline-block">
+            Start a Conversation
+          </a>
+          <a href="/services" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary-700 transition-all duration-300 inline-block">
+            Explore Our Services
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>
