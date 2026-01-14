@@ -1,114 +1,75 @@
 ---
-// Services component
+const services = [
+  {
+    title: "Executive Assistance",
+    description: "Comprehensive administrative support including calendar management, travel coordination, and daily operations.",
+    icon: "📊"
+  },
+  {
+    title: "Strategic Planning",
+    description: "High-level project management and strategic initiative coordination to drive business objectives forward.",
+    icon: "🎯"
+  },
+  {
+    title: "Communication Management",
+    description: "Professional correspondence handling, stakeholder relations, and executive communications.",
+    icon: "💬"
+  },
+  {
+    title: "Event Coordination",
+    description: "Seamless planning and execution of corporate events, board meetings, and executive gatherings.",
+    icon: "🎪"
+  },
+  {
+    title: "Research & Analysis",
+    description: "In-depth market research, competitive analysis, and data-driven insights for informed decision-making.",
+    icon: "🔍"
+  },
+  {
+    title: "Personal Concierge",
+    description: "Exclusive lifestyle management services to maintain work-life balance for busy executives.",
+    icon: "🌟"
+  }
+];
 ---
 
-<section class="section-padding bg-gray-50">
-  <div class="container-custom">
+<section id="services" class="section-padding bg-gray-50">
+  <div class="container-width">
     <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-        Our <span class="text-gradient">Services</span>
+      <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-gray-900 mb-4">
+        Services That Scale With You
       </h2>
-      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-        We provide comprehensive executive search and talent solutions tailored to your organization's unique needs.
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        From daily operations to strategic initiatives, we provide the support you need to excel.
       </p>
     </div>
     
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Executive Search -->
-      <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
-        <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center mb-6">
-          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-          </svg>
+      {services.map((service, index) => (
+        <div class="service-card bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1" style={`animation-delay: ${index * 0.1}s`}>
+          <div class="text-4xl mb-4">{service.icon}</div>
+          <h3 class="text-2xl font-semibold text-gray-900 mb-3">{service.title}</h3>
+          <p class="text-gray-600 leading-relaxed">{service.description}</p>
         </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-4">Executive Search</h3>
-        <p class="text-gray-600 mb-6">
-          Find top-tier executives who align with your company culture and drive strategic growth initiatives.
-        </p>
-        <a href="/services#executive-search" class="text-primary-500 font-semibold hover:text-primary-700 transition-colors">
-          Learn More →
-        </a>
-      </div>
-      
-      <!-- Leadership Assessment -->
-      <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
-        <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center mb-6">
-          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-4">Leadership Assessment</h3>
-        <p class="text-gray-600 mb-6">
-          Evaluate leadership potential and capabilities to make informed decisions about your talent pipeline.
-        </p>
-        <a href="/services#leadership-assessment" class="text-primary-500 font-semibold hover:text-primary-700 transition-colors">
-          Learn More →
-        </a>
-      </div>
-      
-      <!-- Succession Planning -->
-      <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
-        <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center mb-6">
-          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-4">Succession Planning</h3>
-        <p class="text-gray-600 mb-6">
-          Develop strategic succession plans to ensure leadership continuity and organizational resilience.
-        </p>
-        <a href="/services#succession-planning" class="text-primary-500 font-semibold hover:text-primary-700 transition-colors">
-          Learn More →
-        </a>
-      </div>
-      
-      <!-- Board Search -->
-      <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
-        <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center mb-6">
-          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-4">Board Search</h3>
-        <p class="text-gray-600 mb-6">
-          Identify and recruit exceptional board members who bring strategic value and governance expertise.
-        </p>
-        <a href="/services#board-search" class="text-primary-500 font-semibold hover:text-primary-700 transition-colors">
-          Learn More →
-        </a>
-      </div>
-      
-      <!-- Talent Strategy -->
-      <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
-        <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center mb-6">
-          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-4">Talent Strategy</h3>
-        <p class="text-gray-600 mb-6">
-          Develop comprehensive talent strategies that align with your business objectives and growth plans.
-        </p>
-        <a href="/services#talent-strategy" class="text-primary-500 font-semibold hover:text-primary-700 transition-colors">
-          Learn More →
-        </a>
-      </div>
-      
-      <!-- Market Intelligence -->
-      <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
-        <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center mb-6">
-          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-4">Market Intelligence</h3>
-        <p class="text-gray-600 mb-6">
-          Gain insights into talent markets, compensation trends, and competitive landscape analysis.
-        </p>
-        <a href="/services#market-intelligence" class="text-primary-500 font-semibold hover:text-primary-700 transition-colors">
-          Learn More →
-        </a>
-      </div>
+      ))}
     </div>
   </div>
 </section>
+
+<style>
+  .service-card {
+    opacity: 0;
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

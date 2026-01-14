@@ -2,49 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-
 @layer base {
-  html {
-    scroll-behavior: smooth;
+  :root {
+    --color-primary: #0071e3;
+    --color-text: #1d1d1f;
+    --color-text-secondary: #86868b;
+    --color-bg-light: #f5f5f7;
   }
-  
-  body {
-    font-family: 'Inter', system-ui, sans-serif;
-    line-height: 1.6;
+
+  ::selection {
+    background-color: var(--color-primary);
+    color: white;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-white text-gray-800 px-6 py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-300 hover:scale-105;
+    @apply bg-blue-600 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-700 transition-all duration-200 inline-flex items-center justify-center;
   }
-  
-  .btn-secondary {
-    @apply bg-primary-500 text-white px-6 py-3 rounded-full font-medium hover:bg-primary-600 transition-all duration-300 hover:scale-105;
-  }
-  
-  .section-padding {
-    @apply py-16 lg:py-24;
-  }
-  
-  .container-custom {
-    @apply max-w-6xl mx-auto px-6;
-  }
-  
-  .text-gradient {
-    @apply bg-gradient-to-r from-primary-500 to-primary-700 bg-clip-text text-transparent;
-  }
-  
-  .card-hover {
-    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-2;
-  }
-}
 
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-900 px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition-all duration-200 inline-flex items-center justify-center;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+
+  .container-width {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 }

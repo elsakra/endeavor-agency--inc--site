@@ -4,5 +4,7 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   integrations: [tailwind()],
   output: 'static',
-  site: 'https://endeavorexecutive.com'
+  build: {
+    inlineStylesheets: 'auto'
+  }
 });

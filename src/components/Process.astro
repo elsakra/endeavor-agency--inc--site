@@ -1,0 +1,72 @@
+---
+const steps = [
+  {
+    number: "01",
+    title: "Discovery Call",
+    description: "We begin with a comprehensive consultation to understand your unique needs, preferences, and objectives."
+  },
+  {
+    number: "02",
+    title: "Custom Strategy",
+    description: "Our team develops a tailored support plan designed to maximize your productivity and achieve your goals."
+  },
+  {
+    number: "03",
+    title: "Seamless Integration",
+    description: "We integrate smoothly into your workflow, learning your systems and preferences for frictionless support."
+  },
+  {
+    number: "04",
+    title: "Continuous Excellence",
+    description: "Regular check-ins and performance reviews ensure we're always exceeding your expectations."
+  }
+];
+---
+
+<section id="process" class="section-padding bg-gray-50">
+  <div class="container-width">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-gray-900 mb-4">
+        Your Journey to Executive Excellence
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        A proven process designed to deliver immediate value and long-term success.
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {steps.map((step, index) => (
+        <div class="process-step text-center" style={`animation-delay: ${index * 0.15}s`}>
+          <div class="relative mb-6">
+            <div class="w-20 h-20 mx-auto bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
+              {step.number}
+            </div>
+            {index < steps.length - 1 && (
+              <div class="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-gray-300 -translate-x-10"></div>
+            )}
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
+          <p class="text-gray-600">{step.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .process-step {
+    opacity: 0;
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
